@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <schema id="org.gnome.shell.extensions.o-ring" path="/org/gnome/shell/extensions/o-ring/" gettext-domain="o-ring">
+        
+        <!-- OAuth Settings -->
+        <key type="s" name="client-id">
+            <default>''</default>
+            <summary>OAuth Client ID</summary>
+            <description>The Oura API client ID</description>
+        </key>
+        
+        <key type="s" name="client-secret">
+            <default>''</default>
+            <summary>OAuth Client Secret</summary>
+            <description>The Oura API client secret</description>
+        </key>
+        
+        <key type="s" name="access-token">
+            <default>''</default>
+            <summary>OAuth Access Token</summary>
+            <description>The OAuth 2 access token for Oura API</description>
+        </key>
+        
+        <key type="s" name="refresh-token">
+            <default>''</default>
+            <summary>OAuth Refresh Token</summary>
+            <description>The OAuth 2 refresh token for Oura API</description>
+        </key>
+        
+        <key type="i" name="token-expiry">
+            <default>0</default>
+            <summary>OAuth Token Expiry</summary>
+            <description>Unix timestamp when the access token expires</description>
+        </key>
+
+        <!-- General Settings -->
+        <key type="i" name="update-interval">
+            <default>3600</default>
+            <summary>Update Interval</summary>
+            <description>How often to update scores in seconds</description>
+        </key>
+    </schema>
+</schemalist>

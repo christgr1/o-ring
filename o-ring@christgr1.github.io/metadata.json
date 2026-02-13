@@ -1,0 +1,10 @@
+{
+    "uuid": "o-ring@christgr1.github.io",
+    "name": "o-ring",
+    "description": "A GNOME Extension that connects to the Oura Cloud via the Oura API and displays Oura metrics in the GNOME Shell.",
+    "shell-version": [ "46" ],
+    "url": "https://github.com/christgr1/o-ring",
+    "settings-schema": "org.gnome.shell.extensions.o-ring",
+    "gettext-domain": "o-ring",
+    "version": "1"
+}
