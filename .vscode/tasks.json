@@ -1,0 +1,29 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile_gschema",
+            "type": "shell",
+            "args": [],
+            "command": "./scripts/compile_gschema.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "make_scripts_executable",
+            "type": "shell",
+            "args": [],
+            "command": "chmod +x ./scripts/*.sh",
+            "presentation": {
+                "reveal": "always"
+            }
+        }
+    ]
+}
