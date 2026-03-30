@@ -17,7 +17,7 @@ jobs:
 
     - name: Check for changes in schemas
       run: |
-        if ! git diff --exit-code -- o-ring@christgr1.github.io/schemas/gschemas.compile; then
+        if ! git diff --exit-code -- o-ring@christgr1.github.io/schemas/gschemas.compiled; then
           echo "Error: Compiled schemas are not up to date. Please run 'scripts/compile_gschema.sh' and commit the changes."
           git status
           exit 1
