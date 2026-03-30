@@ -10,6 +10,11 @@ import { Extension } from 'resource:///org/gnome/shell/extensions/extension.js';
 import { OuraOAuth } from './oauth.js';
 import { OuraApiClient } from './ouraApi.js';
 
+/**
+ * Base class for the extension.
+ * @class ORingExtension
+ * @extends {Extension}
+*/
 export default class ORingExtension extends Extension {
     enable() {
         this._settings = this.getSettings();
@@ -17,7 +22,7 @@ export default class ORingExtension extends Extension {
         this._api = new OuraApiClient(this._settings, this._oauth);
 
         // Create panel button
-        this._indicator = new PanelMenu.Button(0.0, 'Oura Scores', false);
+        this._indicator = new PanelMenu.Button(0.5, 'Oura Scores', false);
 
         // Create a box to hold icons and score labels
         this._box = new St.BoxLayout({
